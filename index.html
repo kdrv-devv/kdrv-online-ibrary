@@ -1,13 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KDRV-library</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- font avesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>KDRV-online-library</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-left">
+          <a href="tel:+998979661575">
+            <i class="fa-solid fa-phone"></i> +998 97 966 15 75</a
+          >
+        </div>
+        <div class="header-right">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- header finish  -->
+
+    <!-- START SHOWCASE -->
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase-top">
+          <div class="showcase-top-left">
+            <a href="./index.html"
+              ><img src="./assets/imges/tgkanalga.jpg" alt="User-logo"
+            /></a>
+          </div>
+          <div class="showcase-top-center">
+            <button id="open-bars" class="close-bars"><i class="fa-solid fa-xmark"></i></button>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">BOOKS </a>
+            <a href="#">NEW RELEASE</a>
+            <a href="#">CONTACT US</a>
+            <a href="#"> BLOG</a>
+          </div>
+
+          <div class="showcase-top-right">
+            <button id="open-bars" ><i class="fa-solid fa-bars"></i></button>
+            <button><i class="fa-regular fa-user"></i></button>
+            <button><i class="fa-solid fa-bag-shopping"></i></button>
+            <button><i class="fa-regular fa-heart"></i></button>
+          </div>
+        </div>
+
+
+
+        <div class="showcase-bottom">
+
+
+            
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide">
+
+            <div class="showcase-card">
+
+                <div class="showcase-card-left">
+                    <h1>ipsum dolor si</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu.</p>
+                    <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="showcase-card-right">
+                    <img src="./assets/imges/showcase-card-right.png" alt="img">
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+
+    </div>
     
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
 
-</body>
+    </div>
+
+      </div>
+    </section>
+
+
+   <!-- FINISH SHOWCASE -->
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!-- FINISH SHOWCASE -->
+    <script src="./assets/scripts/interaktiv.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  </body>
 </html>
