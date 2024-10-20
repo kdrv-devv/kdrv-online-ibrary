@@ -1,3 +1,5 @@
+
+
 .showcase > div {
   display: flex;
   flex-direction: column;
@@ -176,33 +178,36 @@
 .showcase-card {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  // background: linear-gradient(47deg, #66d966 10.79%, #99e699 68.55%, #e6ffe6 100%);
+
 }
 
 .showcase-card-left {
-  gap: 28px;
+  gap: 15px;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  text-align: start;
     text-align: start;
   width: 45%;
+  // padding-left: 100px;
   h1 {
     font-weight: 600;
     font-size: 60px;
-    line-height: 145%;
+    line-height: 105%;
     letter-spacing: -0.02em;
     text-transform: capitalize;
-    color: #393280;
+    color: #179317;
   }
   p {
     font-weight: 500;
     font-size: 22px;
     line-height: 180%;
     letter-spacing: 0.04em;
-    color: rgba(57, 50, 128, 0.8);
+    color: #1cb11c;
   }
   button {
-    border: 1px solid #393280;
+    border: 1px solid #1cb11c;
     border-radius: 7px;
     width: 197px;
     height: 61px;
@@ -212,11 +217,16 @@
     line-height: 220%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #393280;
+    color: #1cb11c;
   }
 }
 
 .showcase-card-right{
     width: 45%;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
 }
 

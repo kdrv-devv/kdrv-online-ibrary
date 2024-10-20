@@ -9,7 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <title>KDRV-online-library</title>
   </head>
@@ -41,7 +44,9 @@
             /></a>
           </div>
           <div class="showcase-top-center">
-            <button id="open-bars" class="close-bars"><i class="fa-solid fa-xmark"></i></button>
+            <button id="open-bars" class="close-bars">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
             <a href="#">HOME</a>
             <a href="#">ABOUT US</a>
             <a href="#">BOOKS </a>
@@ -51,102 +56,74 @@
           </div>
 
           <div class="showcase-top-right">
-            <button id="open-bars" ><i class="fa-solid fa-bars"></i></button>
+            <button id="open-bars"><i class="fa-solid fa-bars"></i></button>
             <button><i class="fa-regular fa-user"></i></button>
             <button><i class="fa-solid fa-bag-shopping"></i></button>
             <button><i class="fa-regular fa-heart"></i></button>
           </div>
         </div>
 
-
-
         <div class="showcase-bottom">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                
+                <div class="showcase-card">
+                  <div class="showcase-card-left">
+                    <h1>Ikki eshik orasi </h1>
+                    <p>
+                      Asarda insonlar taqdiri va inson umrining murakkabligini mahorat bilan tasvirlangan. Adib, birinchi navbatda, tinchlikka rahna solgan urushni tilga oladi. Ayniqsa, urush voqeligining har bir ota-ona qalbini jarohatlagani, koʻngillariga ozor yetkazgani romanning umuminsoniy pafosini tashkil etadi. 
+                    </p>
+                    <button>
+                      Ko'proq o'qish <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
 
-
-            
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      
-        <div class="swiper-slide">
-
-            <div class="showcase-card">
-
-                <div class="showcase-card-left">
-                    <h1>ipsum dolor si</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu.</p>
-                    <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
-
+                  <div class="showcase-card-right">
+                    <img
+                      src="./assets/imges/ikki-eshik-orasi-png.png"
+                      alt="img"
+                    />
+                  </div>
                 </div>
-
-                <div class="showcase-card-right">
-                    <img src="./assets/imges/showcase-card-right.png" alt="img">
-                </div>
-
-
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
             </div>
 
-
-
+         
+          </div>
         </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
 
-    </div>
-    
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-
-
-    </div>
 
       </div>
     </section>
 
+    <!-- FINISH SHOWCASE -->
 
-   <!-- FINISH SHOWCASE -->
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
     <!-- FINISH SHOWCASE -->
     <script src="./assets/scripts/interaktiv.js"></script>
     <script src="./assets/scripts/main.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-      <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
